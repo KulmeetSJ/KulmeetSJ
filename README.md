@@ -62,6 +62,7 @@
 <hr>
 
 <h1 align="center">Coding Profiles</h1>
+<p align="center">
 <a href="https://leetcode.com/Kulmeet/">
     <img align="center" alt="Kulmeet @Leetcode" width="50px" src="assets/handles/leetcode.svg" />&nbsp;
   </a>
@@ -73,6 +74,7 @@
   <a href="https://auth.geeksforgeeks.org/user/singhkulmeet3">
     <img align="center" alt="Kulmeet @GeeksForGeekss" width="50px" src="assets/handles/gfg.svg" />&nbsp;
   </a>
+</p>
 <hr>
 <h1 align="center">Let's Get Connected</h1>
 <p>I am always open to collaborating on projects and innovative/disruptive ideas. Find out more about me & feel free to connect with me , and if you want help in any query then hit me up 😉</p>
