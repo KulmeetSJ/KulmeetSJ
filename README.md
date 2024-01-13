@@ -57,10 +57,13 @@
   <img align="center" src="assets/tools/word.svg" width="50px" />&nbsp;
   <img align="center" src="assets/tools/excel.svg" width="50px" />&nbsp;
   <img align="center" src="assets/tools/powerpoint.svg" width="50px" />&nbsp;
+  <img align="center" src="assets/gifs/linux.gif" width="50px" />&nbsp;
+  <img align="center" src="assets/tools/virtualbox.svg" width="50px" />&nbsp;
+  <img align="center" src="assets/tools/firebase.svg" width="50px" />&nbsp;
+  <img align="center" src="assets/tools/flask.svg" width="50px" />&nbsp;
+
 </p>
-
 <hr>
-
 <h1 align="center">Coding Profiles</h1>
 <a href="https://leetcode.com/Kulmeet/">
     <img align="center" alt="Kulmeet @Leetcode" width="50px" src="assets/handles/leetcode.svg" />&nbsp;
