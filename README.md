@@ -18,7 +18,7 @@
 
 <img src="assets/gifs/star.gif" width="30px">&nbsp;***Talking about Personal Stuffs:***
 
-<img align="right" width=250px alt="shinchan" src="assets/gifs/shinchan.gif" />
+<img align="right" width=250px alt="shinchan" src="assets/gifs/luffy.gif" />
 
 -   🔭 I’m currently working on several projects (PS :- To know more keep visiting my github profile , I'll keep updating😜)
 -   🌱 I’m currently learning stuff to be a Full-Stack Web Developer!
