@@ -38,7 +38,7 @@
 
 | Project | What it is | Results | Stack |
 |---|---|---|---|
-| **[PayFlow Sim](https://github.com/KulmeetSJ/payflow-sim)**<br>🚧 *In progress* | Event-driven payments simulator on synthetic data: idempotent processing, per-account ordering, retry topics and a dead-letter topic with replay. OpenTelemetry tracing and SLO burn-rate alerts, tested with promtool in CI. | In a consumer-scaling run, **6,000/6,000 payments reached a final state with a balanced ledger**.<br>*Laptop benchmark, synthetic data.* | Java 21, Spring Boot, Kafka, PostgreSQL, OpenTelemetry, Prometheus, Grafana |
+| **[PayFlow Sim](https://github.com/KulmeetSJ/payflow-sim)** | Event-driven payments simulator on synthetic data: idempotent processing, per-account ordering, retry topics and a dead-letter topic with replay. OpenTelemetry tracing and SLO burn-rate alerts, tested with promtool in CI. Load-tested with k6, then broken on purpose with chaos experiments and a blameless postmortem of the induced fault. | **0 accepted payments lost** across 3 chaos runs (broker kill, consumer kill, +500 ms DB latency)<br>Postmortem fixes cut time-to-page from **~51 min (projected) to 11.3 min** and DB round trips from **8 to 4**<br>k6 load-test knee at **750–1,000 payments/s** with 3 processors (laptop-bound, relative)<br>*Laptop benchmark, synthetic data.* | Java 21, Spring Boot, Kafka, PostgreSQL, OpenTelemetry, Prometheus, Grafana, k6, Toxiproxy |
 | **[GitOps Delivery Platform](https://github.com/KulmeetSJ/gitops-demo-platform)**<br>([app repo](https://github.com/KulmeetSJ/gitops-demo-app)) | A Spring Boot API released dev → staging → prod through pull-based GitOps. Canaries are judged on live Prometheus metrics, policies are enforced at admission, and CI is gated by an image scan. | **~17 min** median commit to prod (excluding the approval wait)<br>Canary rolled back **30 s** after the first failed metric-analysis check (**5/5** drills)<br>**7/7** non-compliant manifests blocked<br>*Local kind cluster.* | Argo CD, Argo Rollouts, Kyverno, GitHub Actions, Trivy, Helm |
 | **[Terraform Drift Detector](https://github.com/KulmeetSJ/tf-drift-detector)** | Scheduled drift detection for GCP in GitHub Actions. It separates real drift from unapplied code, catches IAM grants Terraform doesn't manage, and keeps one self-closing GitHub issue. Keyless auth via Workload Identity Federation. | **7/7** console-style changes detected, median **26 s** from change to issue **on a manual run**<br>*Sandbox GCP project.* | Terraform, GCP, GitHub Actions, Conftest/Rego, Python |
 | **[GuruGranthi](https://gurugranthisewa.com/)**<br>🟢 *Live* | Services marketplace and booking platform for Sikh service providers: provider applications and listings, booking requests, an admin portal, and role-based access. | Built and launched; live at [gurugranthisewa.com](https://gurugranthisewa.com/).<br>*Repo is private.* | Next.js, TypeScript, Supabase, PostgreSQL (Row Level Security) |
@@ -85,7 +85,6 @@
 
 ## <img src="assets/gifs/Designer.gif" width="22px"> Currently Building
 
-- **PayFlow Sim Phase 4:** load and chaos testing.
 - My portfolio site and some job-search tooling.
 
 ---
