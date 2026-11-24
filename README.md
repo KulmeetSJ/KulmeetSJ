@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img alt="banner" src="assets/github-header-image.png" />
+  <img alt="Kulmeet Singh: Software Engineer at HSBC. Cloud, platform and AI tooling. Google Cloud Certified Professional Cloud Architect." src="assets/banner.png" />
 </h1>
 
 <h1 align="center">
